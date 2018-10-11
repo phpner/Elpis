@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 @font-face {
-    font-family: blisspro; /* Имя шрифта */
-    src: url(../fonts/blisspro-light.otf); /* Путь к файлу со шрифтом */
+    font-family:blisspro; /* Имя шрифта */
+    src: url(../fonts/BlissPro-Light.woff); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family:blissproB; /* Имя шрифта */
+    src: url(../fonts/BlissPro-Bold.otf); /* Путь к файлу со шрифтом */
 }
 $green : #36c427;
 $text-color: #5a5a5a;
@@ -19,11 +23,13 @@ h2{
 	color: $green;
 	font-weight: bold;
 	font-family: 'Roboto', sans-serif;
-	font-size: 25px;
+	font-size: 30px;
 	text-align: center;
+	text-transform: uppercase;
 }
 .btn-green{
 	background: $green;
+	display: inline-block;
 	border-radius: 50px ;
 	width: 290px;
 	text-align: center;
@@ -35,6 +41,7 @@ h2{
 	font-weight: 400;
 	margin: 35px 0;
 	box-shadow: 0 0 20px 9px #36c4277d;
+	outline: none;
 }
 .row{
 	max-width: 1600px;
@@ -148,7 +155,7 @@ color: $green;
 
 .block1{
 	background: url(../img/bg-block1.png) center left no-repeat;
-    min-height: 354px;
+    min-height: 472px;
 }
 .block1  h2{
     margin: 36px 0;
@@ -158,9 +165,11 @@ color: $green;
 	
 
 	&-item{
-		background: red;
 		margin-right: 13px;
+		font-weight: 100;
+		font-size: 22px;
 		padding: 25px;	
+		font-family: 'blisspro', sans-serif;
 	    border-style: solid;
 	    border-width: 1px;
 	    border-color: rgb(222, 222, 222);
@@ -168,7 +177,7 @@ color: $green;
 	    background-color: rgb(255, 255, 255);
 	    box-shadow: 0px 11px 11.7px 1.3px rgba(51, 45, 43, 0.09);	  
 	    width: 378px;
-	    height: 195px;
+	    height: 248px;
 	    &:last-child{
 	    	margin-right: 0;
 	    }
@@ -188,8 +197,10 @@ color: $green;
 }
 
 .block2-tr{
-		display: flex;
-		height: 600px;
+	display: flex;
+	min-height: 600px;
+	max-width: 1920px;
+	margin: auto; 
 } 
 
 .block2  .block2-td{
@@ -200,23 +211,31 @@ color: $green;
 	padding: 40px 100px;
 }
 
+.block2  .block2-td.left{
+	padding-left: 9%;
+}
+
 .block2  .block2-td.text h3{
 	text-align: left;
 	color: $green;
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 28px;
 	line-height: 38px;
 	margin-bottom: 30px;
+	text-transform: uppercase;
+	line-height: 2;
 }
 .block2  .block2-td.text p{
 	margin-bottom: 22px; 
+	font-size: 25px;
 	font-family: blisspro;
 	color: $text-color;
 }
 
 .block2 .img{
 	background-size: cover;
+	background-position: 40% 57%!important;
     
 }
 .block2 .img-one{
@@ -236,14 +255,150 @@ color: $green;
 
 }
 
+.block3 .row{
+		display:flex;		
+	}
+
+	.block3 .block3-td{
+		width: 50%;
+		padding: 100px 0;
+	}
+
+	.block3 form{
+		display: flex;
+		flex-flow: column;
+		width: 605px;
+		justify-content: center;
+		background: #fff;
+		padding: 20px;
+		border: 1px dotted $text-color;
+	}
+
+	.block3 form span{
+		color: $green;
+		font-size: 22px;
+		font-family: 'blissproB', sans-serif;
+		font-weight: 900;
+		text-transform:  uppercase;
+		text-align: center;
+	}
+	.block3 p{
+		color: $text-color;
+		font-size: 18px;
+		font-family: 'blissproB', sans-serif;
+		font-weight: 900;
+		text-transform:  uppercase;
+		text-align: center;
+		margin-bottom: 35px;
+	}
+
+	.block3 form .btn-green{
+		position: relative;
+		bottom: -41px;
+		margin: auto;
+		border: none;
+	}
+	.block3 form label{
+		color: $text-color;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		font-size: 20px;
+		margin-bottom: 7px;
+		margin-top: 10px;
+	}
+
+	.block3 form input[type='text']{
+		  border-width: 1px;
+		  border-color: rgb(85, 85, 85);
+		  border-style: solid;
+		  border-radius: 3px;
+		  background-color: rgb(246, 246, 246);
+		  opacity: 0.4;
+		  width: 100%;
+		  margin: auto;
+		  height: 37px;
+		  z-index: 126;
+		  outline: none;
+		  padding-left: 10px;
+	}
+	.block3 form textarea{
+		  border-width: 1px;
+		  border-color: rgb(85, 85, 85);
+		  border-style: solid;
+		  border-radius: 3px;
+		  background-color: rgb(246, 246, 246);
+		  opacity: 0.4;
+		  width: 100%;
+		  height: 112px;
+		  z-index: 132;
+		  outline: none;
+
+	}
+	.block3 form input[type='text']:hover , .block3 form textarea:hover, .block3 form input[type='submit']:hover{
+		cursor: url(../img/cursor.png), auto;
+	}
+	.block3 form input[type='text']:focus, .block3 form textarea:focus{
+		border-color: #36bb28;
+	}
+
+	.block3 .block3-td.right h2{
+		text-align: left;
+		margin-top: 20px;
+	}
+	.block3 .block3-td.right > span{
+		font-family: 'Roboto', sans-serif;
+		font-weight: 900;
+		color: $text-color;
+		margin: 20px 0;
+		display: inline-block;
+	}
+	.block3 .block3-td.right p{
+		text-align: left;
+		text-transform: inherit;
+		font-family: 'blisspro', sans-serif;
+		font-weight: 400;
+		font-size: 17px;
+		width: 100%;
+		line-height: 1.4;
+	}
+	.block3 .block3-td.right p > span{
+		color: $green;
+		font-weight: 600;
+	}
+
+
+	
 
 
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1600px) {
+	.block2  .block2-td.left{
+		padding-left: 30px;
+	}
+
+	.block2 .block2-td.text {
+    padding: 7px 30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+	.block3 form{
+		width: 581px;
+	}
+
+}
 @media only screen and (max-width : 1200px) {
 	.block1 .flex-block-item{
-		height: 220px;
+		height: auto;
+		margin-bottom: 31px;
+	}
+	.block2 .img{
+		background-size: cover!important;
+	}
+	.block3 form{
+		width: 431px;
 	}
 
 }
@@ -261,6 +416,84 @@ color: $green;
 		width: 45%;
 		margin: 10px!important;
 	}
+	.block2{
+		margin-top: 32px;
+	}
+	.block2 .img{
+		display: none;
+	}
+	.block2 .block2-td.text{
+		width: 100%;
+		position: relative;
+		background: rgba(255, 255, 255, 0.86);
+
+	}
+	.block2 .block2-td.text h3{
+		text-align: center;
+		line-height: 1.4;
+		margin-bottom: 16px;
+	}
+	.block2 .block2-td.text p{
+		margin-bottom: 10px;
+	}
+	.block2 .block2-tr{
+		justify-content: center;
+		align-items: center;
+		min-height: auto;
+		margin-bottom: 60px;
+	}
+	.block2 .block2-tr .btn-green{
+	    margin:auto;
+	    position: relative;
+        bottom: -29px;
+	}
+	.block2 .text-bg-one, .block2 .text-bg-two, .block2 .text-bg-th, .block2 .text-bg-fo{		
+		width: 100%;
+		height: 100%;
+		background-size: cover!important;
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: -1;
+	} 
+
+	.block2 .text-bg-one{
+		background: url(../img/img-1.png)no-repeat;
+		background-position: 39% 1% !important;
+	}
+	.block2  .text-bg-two{
+		background: url(../img/img-2.png)no-repeat;
+		background-position: 69% 1% !important;
+	}
+	.block2  .text-bg-th{
+		background: url(../img/img-3.png)no-repeat;
+	}
+	.block2  .text-bg-fo{
+		background: url(../img/img-4.png)no-repeat;
+		background-position: 69% 1% !important;
+	}
+	.block3 .row{
+		flex-flow: column;
+		align-items: center;
+	}
+
+	.block3 .block3-td {
+	    width: 90%;
+	    padding: 10px 0;
+	}
+
+	.block3 .row .right{
+		order: -1;
+		display: block;
+		text-align: center;
+	}
+	.block3 .block3-td.right h2{
+		text-align: center;
+	}
+	.block3 form {
+	    margin: auto;
+	}
+
 }
 
 /* Small Devices, Tablets */
@@ -285,10 +518,7 @@ color: $green;
 	    margin-top: 18px;
         font-size: 22px;
         text-align: center;
-	}
-	.block1 .flex-block-item{
-		height: 240px;
-	}
+	}	
 }
 
 /* Extra Small Devices, Phones */
@@ -304,6 +534,33 @@ color: $green;
 	.block1 .flex-block-item{
 		width: 90%;
 		margin: 10px 0;
+	}
+
+	.btn-green{
+		width: 242px;
+	}
+	.block2 .block2-td.text h3{
+		font-size: 18px;
+	}
+	 .block2 .text-bg-two{
+    	background-size: 167% 100% !important;
+	}
+
+	.block3 .block3-td.right h2{
+		font-size: 18px;
+	}
+	.block3 .block3-td{
+		width: 100%;
+	}
+	.block3 form{
+		width: 100%;
+	}
+	.block3 form span{
+		font-size: 12px;
+	}
+	.block3 p{
+		font-size: 11px;
+		margin-bottom: 8px;
 	}
 }
 
