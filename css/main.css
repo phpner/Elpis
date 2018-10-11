@@ -422,6 +422,61 @@ h2 {
   color: #36c427;
   font-weight: 600; }
 
+.block4 {
+  background: #ebebeb; }
+
+.block4 .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.block4 .row .block4-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.block4 h2 {
+  padding-top: 30px;
+  margin-bottom: 70px; }
+
+.block4 .row .block4-item img {
+  width: 39px;
+  height: 46px;
+  margin-bottom: 10px; }
+
+.block4 .row .block4-item span {
+  color: #36c427;
+  font-weight: 600; }
+
+.block4 .row .block4-item p {
+  color: #5a5a5a;
+  text-align: center; }
+
+.block4 .btn-green {
+  margin: auto;
+  display: block;
+  position: relative;
+  bottom: -20px; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1600px) {
@@ -559,7 +614,9 @@ h2 {
   .block3 .block3-td.right h2 {
     text-align: center; }
   .block3 form {
-    margin: auto; } }
+    margin: auto; }
+  .block4 {
+    margin-top: 80px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 800px) {
@@ -584,7 +641,19 @@ h2 {
   #header .text_in_header_bottom {
     margin-top: 18px;
     font-size: 22px;
-    text-align: center; } }
+    text-align: center; }
+  .block4 .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column; }
+  .block4 .row .block4-item {
+    margin-bottom: 40px; }
+  .block4 h2 {
+    margin-bottom: 40px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {

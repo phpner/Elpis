@@ -365,8 +365,42 @@ color: $green;
 		color: $green;
 		font-weight: 600;
 	}
+	.block4{
+		background: #ebebeb;
+	}
+	.block4 .row{
+		display: flex;
+		justify-content: space-around;
 
-
+	}
+	.block4 .row .block4-item{
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+	.block4 h2{
+		padding-top: 30px;
+		margin-bottom: 70px;
+	}
+	.block4 .row .block4-item img{
+		width: 39px;
+		height: 46px;
+		margin-bottom: 10px;
+	}
+	.block4 .row .block4-item span{
+		color: $green;
+		font-weight: 600;
+	}
+	.block4 .row .block4-item p{
+		color: $text-color;
+		text-align: center;
+	}
+	.block4 .btn-green{
+		margin: auto;
+		display: block;
+		position: relative;
+		bottom: -20px;
+	}
 	
 
 
@@ -494,6 +528,10 @@ color: $green;
 	    margin: auto;
 	}
 
+	.block4 {
+		margin-top: 80px;
+	}
+
 }
 
 /* Small Devices, Tablets */
@@ -518,7 +556,17 @@ color: $green;
 	    margin-top: 18px;
         font-size: 22px;
         text-align: center;
+	}
+
+	.block4 .row{
+		flex-flow: column;
 	}	
+	.block4 .row .block4-item{
+	margin-bottom: 40px;
+	}
+	.block4 h2{
+		margin-bottom: 40px;
+	}
 }
 
 /* Extra Small Devices, Phones */
