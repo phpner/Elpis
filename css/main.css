@@ -14,6 +14,16 @@
   box-sizing: border-box;
   letter-spacing: 1px; }
 
+body {
+  background: #f5f5f5; }
+
+h2 {
+  color: #36c427;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  text-align: center; }
+
 .btn-green {
   background: #36c427;
   -webkit-border-radius: 50px;
@@ -34,7 +44,8 @@
 
 .row {
   max-width: 1600px;
-  margin: auto; }
+  margin: auto;
+  padding: 0 20px; }
 
 #header {
   min-height: 100vh;
@@ -179,9 +190,120 @@
   position: absolute;
   bottom: 0; }
 
+.block1 {
+  background: url(../img/bg-block1.png) center left no-repeat;
+  min-height: 354px; }
+
+.block1 h2 {
+  margin: 36px 0; }
+
+.block1 .flex-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .block1 .flex-block-item {
+    background: red;
+    margin-right: 13px;
+    padding: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dedede;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: white;
+    -webkit-box-shadow: 0px 11px 11.7px 1.3px rgba(51, 45, 43, 0.09);
+    -moz-box-shadow: 0px 11px 11.7px 1.3px rgba(51, 45, 43, 0.09);
+    box-shadow: 0px 11px 11.7px 1.3px rgba(51, 45, 43, 0.09);
+    width: 378px;
+    height: 195px; }
+    .block1 .flex-block-item:last-child {
+      margin-right: 0; }
+    .block1 .flex-block-item p {
+      color: #36c427;
+      font-size: 15px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 10px 0; }
+    .block1 .flex-block-item span {
+      color: #5a5a5a; }
+
+.block2-tr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px; }
+
+.block2 .block2-td {
+  width: 50%; }
+
+.block2 .block2-td.text {
+  padding: 40px 100px; }
+
+.block2 .block2-td.text h3 {
+  text-align: left;
+  color: #36c427;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 38px;
+  margin-bottom: 30px; }
+
+.block2 .block2-td.text p {
+  margin-bottom: 22px;
+  font-family: blisspro;
+  color: #5a5a5a; }
+
+.block2 .img {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.block2 .img-one {
+  background: url("../img/img-1.png") 0 0 no-repeat; }
+
+.block2 .img-sec {
+  background: url("../img/img-2.png") 0 0 no-repeat; }
+
+.block2 .img-th {
+  background: url("../img/img-3.png") 0 0 no-repeat; }
+
+.block2 .img-fo {
+  background: url("../img/img-4.png") 0 0 no-repeat; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .block1 .flex-block-item {
+    height: 220px; } }
+
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .block1 {
+    background: none; }
+  .block1 .flex-block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .block1 .flex-block-item {
+    width: 45%;
+    margin: 10px !important; } }
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 800px) {
   #header .tel_top {
@@ -205,7 +327,9 @@
   #header .text_in_header_bottom {
     margin-top: 18px;
     font-size: 22px;
-    text-align: center; } }
+    text-align: center; }
+  .block1 .flex-block-item {
+    height: 240px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -220,7 +344,10 @@
     margin-top: 12px; }
   #header .tel_top .tel:last-child {
     margin-left: 6px;
-    margin-top: 8px; } }
+    margin-top: 8px; }
+  .block1 .flex-block-item {
+    width: 90%;
+    margin: 10px 0; } }
 
 /* Custom, iPhone Retina */
 /*==========  Mobile First height  ==========*/
