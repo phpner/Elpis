@@ -681,6 +681,26 @@ color: $green;
 	.block9-item.right .tel .text{
 		font-size: 15px;
 	}
+
+	footer{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		min-height: 200px;
+		background: url(../img/bg-footer.png)0 0 no-repeat;
+		background-size: 100% 100%;
+		width: 100%;
+	}
+	footer .logo-footer{
+		width: 110px;
+		height: 90px;
+	}
+	footer .btn-green{
+		margin-left: 13%;
+	}
+	footer .tel span{
+		color: #fff;
+	}
 	.fack{
 		height: 100vh;
 	}
