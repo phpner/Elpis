@@ -27,6 +27,9 @@ h2{
 	text-align: center;
 	text-transform: uppercase;
 }
+a:hover{
+	cursor: url(../img/cursor.png),auto;
+}
 .btn-green{
 	background: $green;
 	display: inline-block;
@@ -267,7 +270,7 @@ color: $green;
 		padding: 100px 0;
 	}
 
-	.block3 form{
+	.form{
 		display: flex;
 		flex-flow: column;
 		width: 605px;
@@ -277,7 +280,7 @@ color: $green;
 		border: 1px dotted $text-color;
 	}
 
-	.block3 form span{
+	.form span{
 		color: $green;
 		font-size: 22px;
 		font-family: 'blissproB', sans-serif;
@@ -295,13 +298,13 @@ color: $green;
 		margin-bottom: 35px;
 	}
 
-	.block3 form .btn-green{
+	.form .btn-green{
 		position: relative;
 		bottom: -41px;
 		margin: auto;
 		border: none;
 	}
-	.block3 form label{
+	.form label{
 		color: $text-color;
 		font-family: 'Roboto', sans-serif;
 		font-weight: 300;
@@ -310,7 +313,7 @@ color: $green;
 		margin-top: 10px;
 	}
 
-	.block3 form input[type='text']{
+	.form input[type='text']{
 		  border-width: 1px;
 		  border-color: rgb(85, 85, 85);
 		  border-style: solid;
@@ -324,7 +327,7 @@ color: $green;
 		  outline: none;
 		  padding-left: 10px;
 	}
-	.block3 form textarea{
+	.form textarea{
 		  border-width: 1px;
 		  border-color: rgb(85, 85, 85);
 		  border-style: solid;
@@ -337,10 +340,10 @@ color: $green;
 		  outline: none;
 
 	}
-	.block3 form input[type='text']:hover , .block3 form textarea:hover, .block3 form input[type='submit']:hover{
+	.form input[type='text']:hover , .form textarea:hover, .form input[type='submit']:hover{
 		cursor: url(../img/cursor.png), auto;
 	}
-	.block3 form input[type='text']:focus, .block3 form textarea:focus{
+	.form input[type='text']:focus, .form textarea:focus{
 		border-color: #36bb28;
 	}
 
@@ -485,6 +488,23 @@ color: $green;
 		background: url(../img/prev.png)0 0 no-repeat;
 		
 	}
+
+	.next-p, .prev-p{
+		width: 30px;
+	    height: 30px;
+	    display: block;
+	    background-size: contain!important;
+	}
+	
+	.next-p{
+		background: url(../img/next.png)0 0 no-repeat;
+		
+	}
+	.prev-p{
+		background: url(../img/prev.png)0 0 no-repeat;
+		
+	}
+
 	.owl-theme .owl-nav [class*='owl-']:hover{
 		background:none;
 		outline: none;
@@ -507,10 +527,92 @@ color: $green;
 		width: 450px;
 		height: 600px;
 		margin: 25px;
+		margin: auto;
 	}
 	.block6 .block6-item img{
 		width: 100%;
 		height: 100%;
+	}
+	.block7{
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.14);
+		margin-top: 90px;
+		padding-top: 25px;
+		padding-bottom: 20px;
+	}
+	.block7 h2{
+		
+		margin-bottom: 10px;
+	}
+	.block7 .block7-item{
+		width: 200px;
+		height: 160px;
+		margin: auto;
+	}
+	.block7 .block7-item img{
+		width: 100%;
+		height: 100%;
+	}
+
+	.block7 .slider2.owl-theme{
+		width: 50%;
+		margin: auto;
+	}
+	.block7 .slider2 .owl-prev{
+		position: absolute;
+		left: 0px;
+		top: 35%;
+	}
+	.block7 .slider2 .owl-next{
+		position: absolute;
+		right: -10px;
+		top: 35%;
+	}
+
+	.block8{
+		position: relative;
+		background: rgba(255,255,255,.8);
+		padding: 130px 0;
+	}
+	.block8 .bg-block{
+		background: url(../img/bg-block8.png)0 0 no-repeat;
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		bottom: 0;
+		position: absolute;
+		z-index: -1
+	}
+	.block8 .form{
+		margin: auto;
+		position: relative;
+		transform-style: preserve-3d;
+	}
+	.block8 .form:before{
+		content: '';
+		background: url(../img/form-in-left.png)0 0 no-repeat;
+		width: 450px;
+		height: 260px;
+		background-size: 100% 100%!important;
+		left: -250px;
+		top: 30%;
+		position: absolute;
+		z-index: -1;
+		transform: translateZ(-1px);
+	}
+	.block8 .form:after{
+		content: '';
+		background: url(../img/form-in-right.png)0 0 no-repeat;
+		background-size: 100% 100%!important;
+		width: 180px;
+		height: 190px;
+		top: 30%;
+		right: -120px;
+		position: absolute;
+		transform: translateZ(-1px);
+	}
+	.fack{
+		height: 100vh;
 	}
 
 /*==========  Desktop First Method  ==========*/
@@ -527,7 +629,7 @@ color: $green;
     flex-flow: column;
     justify-content: space-around;
 	}
-	.block3 form{
+	.form{
 		width: 581px;
 	}
 
@@ -535,7 +637,9 @@ color: $green;
     width: 31%;
   	 height: 100%;
 	}
-
+	.block7 .block7-item{
+		width: 171px;
+	}
 }
 @media only screen and (max-width : 1200px) {
 	.block1 .flex-block-item{
@@ -545,7 +649,7 @@ color: $green;
 	.block2 .img{
 		background-size: cover!important;
 	}
-	.block3 form{
+	.form{
 		width: 431px;		
 	}
 
@@ -643,7 +747,7 @@ color: $green;
 	.block3 .block3-td.right h2{
 		text-align: center;
 	}
-	.block3 form {
+	.form {
 	    margin: auto;
 	    padding: 20px;
 	}
@@ -662,7 +766,12 @@ color: $green;
 		width: 100%;
 		height: 100%;
 	}
-
+	.block7 .slider2 .owl-next,.block7 .slider2 .owl-prev{
+		position: relative;
+	}
+	.block8 .form:after,.block8 .form:before{
+		display: none;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -708,6 +817,9 @@ color: $green;
 	.block6 .block6-item{
 		width: 60%;
 	}
+	.block7 .slider2.owl-theme{
+		width: 100%;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -741,10 +853,10 @@ color: $green;
 	.block3 .block3-td{
 		width: 100%;
 	}
-	.block3 form{
+	.form{
 		width: 100%;
 	}
-	.block3 form span{
+	.form span{
 		font-size: 12px;
 	}
 	.block3 p{

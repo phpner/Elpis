@@ -1,14 +1,35 @@
 jQuery(document).ready(function($) {
 	var sittengs = {
-	    loop:false,
-	    dots: false,
-	    margin:10,
-	    items:1,
-	    nav:true,
-	    navText: ['<span class=\'prev-go\'></span>','<span class=\'next-go\'></span>']
+		siter1:{
+			loop:false,
+			dots: false,
+			margin:10,
+			items:1,
+			nav:true,
+			navText: ['<span class=\'prev-go\'></span>','<span class=\'next-go\'></span>']
+		},
+		siter2:{
+			loop:true,
+			dots: false,
+			margin:10,
+			nav:true,
+			navText: ['<span class=\'prev-p\'></span>','<span class=\'next-p\'></span>'],
+			responsive:{
+			     0:{
+			         items:1
+			     },
+			     480:{
+			         items:2
+			     },
+			     1200:{
+			         items:3
+			     }
+			 }
+		}
+	   
 	}
 	
-
+	$(".slider2").owlCarousel(sittengs.siter2);
 	sliderInit();
 
 	$(window).resize(function(event) {
@@ -21,15 +42,14 @@ jQuery(document).ready(function($) {
 
 		if (widthW <= 800){
 
-			$(".slider1").owlCarousel(sittengs);
+			$(".slider1").owlCarousel(sittengs.siter1);
 
 		}else{
 
 			$(".slider1").owlCarousel('destroy');
 
-		}
+		}		
 		
-		console.log($(window).innerWidth());
 	}
 
 	$('.image-popup').magnificPopup({

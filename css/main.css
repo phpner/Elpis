@@ -31,6 +31,9 @@ h2 {
   text-align: center;
   text-transform: uppercase; }
 
+a:hover {
+  cursor: url(../img/cursor.png), auto; }
+
 .btn-green {
   background: #36c427;
   display: inline-block;
@@ -311,7 +314,7 @@ h2 {
   width: 50%;
   padding: 100px 0; }
 
-.block3 form {
+.form {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -334,7 +337,7 @@ h2 {
   padding: 20px 70px;
   border: 1px dotted #5a5a5a; }
 
-.block3 form span {
+.form span {
   color: #36c427;
   font-size: 22px;
   font-family: 'blissproB', sans-serif;
@@ -351,13 +354,13 @@ h2 {
   text-align: center;
   margin-bottom: 35px; }
 
-.block3 form .btn-green {
+.form .btn-green {
   position: relative;
   bottom: -41px;
   margin: auto;
   border: none; }
 
-.block3 form label {
+.form label {
   color: #5a5a5a;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -365,7 +368,7 @@ h2 {
   margin-bottom: 7px;
   margin-top: 10px; }
 
-.block3 form input[type='text'] {
+.form input[type='text'] {
   border-width: 1px;
   border-color: #555555;
   border-style: solid;
@@ -381,7 +384,7 @@ h2 {
   outline: none;
   padding-left: 10px; }
 
-.block3 form textarea {
+.form textarea {
   border-width: 1px;
   border-color: #555555;
   border-style: solid;
@@ -395,10 +398,10 @@ h2 {
   z-index: 132;
   outline: none; }
 
-.block3 form input[type='text']:hover, .block3 form textarea:hover, .block3 form input[type='submit']:hover {
+.form input[type='text']:hover, .form textarea:hover, .form input[type='submit']:hover {
   cursor: url(../img/cursor.png), auto; }
 
-.block3 form input[type='text']:focus, .block3 form textarea:focus {
+.form input[type='text']:focus, .form textarea:focus {
   border-color: #36bb28; }
 
 .block3 .block3-td.right h2 {
@@ -586,6 +589,21 @@ h2 {
 .prev-go {
   background: url(../img/prev.png) 0 0 no-repeat; }
 
+.next-p, .prev-p {
+  width: 30px;
+  height: 30px;
+  display: block;
+  -webkit-background-size: contain !important;
+  -moz-background-size: contain !important;
+  -o-background-size: contain !important;
+  background-size: contain !important; }
+
+.next-p {
+  background: url(../img/next.png) 0 0 no-repeat; }
+
+.prev-p {
+  background: url(../img/prev.png) 0 0 no-repeat; }
+
 .owl-theme .owl-nav [class*='owl-']:hover {
   background: none;
   outline: none; }
@@ -620,11 +638,107 @@ h2 {
 .block6 .block6-item {
   width: 450px;
   height: 600px;
-  margin: 25px; }
+  margin: 25px;
+  margin: auto; }
 
 .block6 .block6-item img {
   width: 100%;
   height: 100%; }
+
+.block7 {
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.14);
+  margin-top: 90px;
+  padding-top: 25px;
+  padding-bottom: 20px; }
+
+.block7 h2 {
+  margin-bottom: 10px; }
+
+.block7 .block7-item {
+  width: 200px;
+  height: 160px;
+  margin: auto; }
+
+.block7 .block7-item img {
+  width: 100%;
+  height: 100%; }
+
+.block7 .slider2.owl-theme {
+  width: 50%;
+  margin: auto; }
+
+.block7 .slider2 .owl-prev {
+  position: absolute;
+  left: 0px;
+  top: 35%; }
+
+.block7 .slider2 .owl-next {
+  position: absolute;
+  right: -10px;
+  top: 35%; }
+
+.block8 {
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 130px 0; }
+
+.block8 .bg-block {
+  background: url(../img/bg-block8.png) 0 0 no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1; }
+
+.block8 .form {
+  margin: auto;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+.block8 .form:before {
+  content: '';
+  background: url(../img/form-in-left.png) 0 0 no-repeat;
+  width: 450px;
+  height: 260px;
+  -webkit-background-size: 100% 100% !important;
+  -moz-background-size: 100% 100% !important;
+  -o-background-size: 100% 100% !important;
+  background-size: 100% 100% !important;
+  left: -250px;
+  top: 30%;
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: translateZ(-1px);
+  -moz-transform: translateZ(-1px);
+  transform: translateZ(-1px); }
+
+.block8 .form:after {
+  content: '';
+  background: url(../img/form-in-right.png) 0 0 no-repeat;
+  -webkit-background-size: 100% 100% !important;
+  -moz-background-size: 100% 100% !important;
+  -o-background-size: 100% 100% !important;
+  background-size: 100% 100% !important;
+  width: 180px;
+  height: 190px;
+  top: 30%;
+  right: -120px;
+  position: absolute;
+  -webkit-transform: translateZ(-1px);
+  -moz-transform: translateZ(-1px);
+  transform: translateZ(-1px); }
+
+.fack {
+  height: 100vh; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
@@ -648,11 +762,13 @@ h2 {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around; }
-  .block3 form {
+  .form {
     width: 581px; }
   .block6 .block6-item {
     width: 31%;
-    height: 100%; } }
+    height: 100%; }
+  .block7 .block7-item {
+    width: 171px; } }
 
 @media only screen and (max-width: 1200px) {
   .block1 .flex-block-item {
@@ -663,7 +779,7 @@ h2 {
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
     background-size: cover !important; }
-  .block3 form {
+  .form {
     width: 431px; }
   .block5 .row .block5-item img, .block5 .row .block5-item .block {
     width: 400px;
@@ -768,7 +884,7 @@ h2 {
     text-align: center; }
   .block3 .block3-td.right h2 {
     text-align: center; }
-  .block3 form {
+  .form {
     margin: auto;
     padding: 20px; }
   .block4 {
@@ -780,7 +896,11 @@ h2 {
     position: relative; }
   .block5 .row .block5-item img {
     width: 100%;
-    height: 100%; } }
+    height: 100%; }
+  .block7 .slider2 .owl-next, .block7 .slider2 .owl-prev {
+    position: relative; }
+  .block8 .form:after, .block8 .form:before {
+    display: none; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 800px) {
@@ -829,7 +949,9 @@ h2 {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap; }
   .block6 .block6-item {
-    width: 60%; } }
+    width: 60%; }
+  .block7 .slider2.owl-theme {
+    width: 100%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -861,9 +983,9 @@ h2 {
     font-size: 18px; }
   .block3 .block3-td {
     width: 100%; }
-  .block3 form {
+  .form {
     width: 100%; }
-  .block3 form span {
+  .form span {
     font-size: 12px; }
   .block3 p {
     font-size: 11px;
