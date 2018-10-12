@@ -12,6 +12,23 @@
     <link rel="stylesheet" href="css/main.css">   
 </head>
 <body>
+     <form data-effect="mfp-zoom-in" method="post" action="/message.php" class="white-popup mfp-with-anim mfp-hide form" id="form">
+
+            <span>Оставьте заявку пока не поздно</span>
+            <p>перезвоним и проконсультриуем в <br>ближайшее время!</p>
+            <label for="name">Ваше имя</label>
+            <input type="text" name="name">
+
+            <label for="tel">Телфон</label>
+            <input type="text" name="tel">
+
+            <label for="text">Ваше сообщение</label>
+            <textarea name="text" id="" cols="30" rows="10"></textarea> 
+
+            <input type="submit" class="btn-green">
+
+    </form>
+    </div>
 <header id="header">
     <div class="row">
         <div class="tel_top">
@@ -29,7 +46,7 @@
                 <h1><span>Предрейсовые</span> медицинские осмотры <br>в Воронеже и области</h1>                   
             </div>
              <span class="text_in_header_bottom">Мы дарим уверенность и спокойствие!</span>
-            <a href="#form" class="btn-green">Обратный звонок</a>
+            <a data-effect="mfp-zoom-in"  href="#form" class="btn-green popup-with-form"  data-effect="mfp-zoom-in">Обратный звонок</a>
             <span id="alldays">Круглосуточно</span>
             <span class="mou"></span>
         </div>
@@ -76,7 +93,7 @@
                     организации имеющей лицензию на данный вид деятельности
                 </p>
             </span>
-            <a href="#more" class="btn-green">Подробнее</a>
+            <a href="#form" class="btn-green popup-with-form"  data-effect="mfp-zoom-in">Подробнее</a>
         </div>
         <div class="block2-td img img-one"></div>
     </div>
@@ -93,7 +110,7 @@
                <p>Предрейсовый осмотр осуществляется сертифицированным инспектором медицинской
                 организации имеющей лицензию на данный вид деятельности</p>
             </span>
-            <a href="#more" class="btn-green">Подробнее</a>
+            <a href="#form" class="btn-green popup-with-form"  data-effect="mfp-zoom-in">Подробнее</a>
         </div>
         
     </div>
@@ -111,7 +128,7 @@
                 организации имеющей лицензию на данный вид деятельности
                 </p>
             </span>
-            <a href="#more" class="btn-green">Подробнее</a>
+            <a href="#form" class="btn-green popup-with-form"  data-effect="mfp-zoom-in">Подробнее</a>
         </div>
         <div class="block2-td img img-th"></div>
     </div>
@@ -129,7 +146,7 @@
                     организации имеющей лицензию на данный вид деятельности
                 </p>
             </span>
-            <a href="#more" class="btn-green">Подробнее</a>
+            <a href="#form" class="btn-green popup-with-form"  data-effect="mfp-zoom-in">Подробнее</a>
         </div>
        
     </div>
@@ -138,7 +155,7 @@
     <div class="row">
         <div class="block3-td">
             <div id="form-in">
-                <form action="" class="form">
+                <form action="message.php" method="post" class="form">
                     <span>Оставьте заявку пока не поздно</span>
                     <p>перезвоним и проконсультриуем в <br>ближайшее время!</p>
                     <label for="name">Ваше имя</label>
@@ -209,7 +226,7 @@
             <p>Более 10 лет успешной <br> деятельности</p>
         </div> 
     </div>
-     <a href="#more" class="btn-green">Обратный звонок</a>
+     <a href="#form" class="btn-green popup-with-form"  data-effect="mfp-zoom-in">Обратный звонок</a>
 </div>
 <div class="block5">
     <h2>почему выбирают нас</h2>
@@ -301,8 +318,8 @@
         <div class="bg-block"></div>
             <div class="row">
                 <div class="block8-item">
-                    <div id="form-in">
-                        <form action="" class="form">
+                    <div class="form-in">
+                        <form action="message.php" method="post" class="form">
                             <span>Оставьте заявку пока не поздно</span>
                             <p>перезвоним и проконсультриуем в <br>ближайшее время!</p>
                             <label for="name">Ваше имя</label>
@@ -344,7 +361,7 @@
     </div>
     <footer>
         <img class="logo-footer" src="img/logo.png" alt="элпис">
-        <a class="btn-green" href="#form">Обратный звонок</a>
+        <a class="btn-green popup-with-form"  data-effect="mfp-zoom-in" href="#form">Обратный звонок</a>
         <div class="tel-footer">
             <span>8 (800) 555-23-20</span> <br>
             <span>+7 (473) 2-911-188 </span>

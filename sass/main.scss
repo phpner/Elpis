@@ -57,6 +57,72 @@ a:hover{
 	margin: auto;
 	padding: 0 20px;
 }
+
+.white-popup-block {
+  position: relative;
+  background: #FFF;
+  padding: 25px;
+  width:auto;
+  max-width: 400px;
+  margin: 0 auto; 
+}
+
+/* text-based popup styling */
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 25px;
+  width:auto;
+  max-width: 400px;
+  margin: 0 auto; 
+}
+
+/* 
+
+====== Zoom effect ======
+
+*/
+.mfp-zoom-in {
+  
+  /* start state */
+  .mfp-with-anim {
+    opacity: 0;
+    transition: all 0.2s ease-in-out; 
+    transform: scale(0.8); 
+  }
+  
+  &.mfp-bg {
+    opacity: 0;
+	  transition: all 0.3s ease-out;
+  }
+  
+  /* animate in */
+  &.mfp-ready {
+    .mfp-with-anim {
+      opacity: 1;
+      transform: scale(1); 
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+  
+  /* animate out */
+  &.mfp-removing {
+    
+    .mfp-with-anim {
+      transform: scale(0.8); 
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+    
+  }
+  
+}
+
+
 #header{
 	min-height: 100vh;
 	height: 100%;
@@ -350,6 +416,10 @@ color: $green;
 		border-color: #36bb28;
 	}
 
+	#form{
+		padding: 20px 17px;
+	}
+
 	.block3 .block3-td.right h2{
 		text-align: left;
 		margin-top: 20px;
@@ -520,7 +590,7 @@ color: $green;
 
 	.block6 h2{
 		margin-top: 90px;
-		margin-bottom: 10px;
+		margin-bottom: 30px;
 	}
 	.block6 .row{
 		display: flex;
@@ -696,10 +766,23 @@ color: $green;
 		height: 90px;
 	}
 	footer .btn-green{
-		margin-left: 13%;
+		margin-left: 8%;
 	}
-	footer .tel span{
+	footer .tel-footer span{
 		color: #fff;
+		font-family: "Roboto";
+		font-weight: 400;
+		margin-bottom: 10px;
+		display: inline-block;
+	}
+	footer .tel-footer span:before{
+		content: "";
+		background: url(../img/phone.png) 0 0 no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		vertical-align: middle;
+		padding-left: 10px;
 	}
 	.fack{
 		height: 100vh;
@@ -919,7 +1002,12 @@ color: $green;
 		align-items: center;
 	}
 	.block9 .block9-item{
-		height: 371px;
+		height: auto;
+	}
+	.block9 .block9-item.left iframe{
+		height: 300px;
+		margin-top: 10px;
+		margin-top: 70px;
 	}
 	.block9-item.right,.block9-item.left{
 		width: 90%;
@@ -933,6 +1021,12 @@ color: $green;
 	.block9-item.right .block-text{
 		text-align: center;
 		margin-top: 0;
+	}
+	footer{
+		flex-direction: column;
+	}
+	footer .logo-footer{
+		display: none;
 	}
 }
 
