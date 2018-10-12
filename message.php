@@ -1,3 +1,4 @@
+<?php header('Content-type: text/html; charset=utf-8');?>
 <style>
 	.thanks{
     font-size: 3rem;
@@ -17,6 +18,7 @@
 </style>
 <?php 
 
+setlocale(LC_ALL, "russian");
 $monthes = array(
     1 => 'Января', 2 => 'Февраля', 3 => 'Марта', 4 => 'Апреля',
     5 => 'Мая', 6 => 'Июня', 7 => 'Июля', 8 => 'Августа',
@@ -45,7 +47,7 @@ if($_POST['text']){
 
 
 
-$body = "Имя:$name <br>Сообщение: $text <br>Телефон: $phone <br>Дата везда: $data" ;
+$body = "Имя:$name <br> Телефон: $phone <br>Дата везда: $data <br>Сообщение: $text" ;
 require_once($_SERVER['DOCUMENT_ROOT'] . '/phpmailer/PHPMailerAutoload.php'); //подключаем класс
 $mail = new PHPMailer(); //вызываем класс
 $mail->CharSet = 'utf-8';   //Устанавливаем кодировку
@@ -60,7 +62,7 @@ $mail->IsHTML(true);
 if(!$mail->Send()) {
     echo "Mailer Error: " . $mail->ErrorInfo; //Выводит ошибку с учетом языка
 } else {
-    echo "<b class='thanks'>Заказ принят</b>";
+    echo "<b class='thanks'>Мы Вам скоро перезвоним!</b>";
 }
 /*header( 'Refresh: 0; url=http://kuban-hostel.ru/' );*/
 /*exit;*/

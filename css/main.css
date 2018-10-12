@@ -473,6 +473,14 @@ a:hover {
 #form {
   padding: 20px 17px; }
 
+input.error {
+  border-color: #d57f7f !important; }
+
+input.valid {
+  -webkit-box-shadow: 0 0 0px 2px #a7ca30;
+  -moz-box-shadow: 0 0 0px 2px #a7ca30;
+  box-shadow: 0 0 0px 2px #a7ca30; }
+
 .block3 .block3-td.right h2 {
   text-align: left;
   margin-top: 20px; }
