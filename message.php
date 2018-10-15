@@ -47,7 +47,7 @@ if($_POST['text']){
 
 
 
-$body = "Имя:$name <br> Телефон: $phone <br>Дата везда: $data <br>Сообщение: $text" ;
+$body = "Имя: $name <br> Телефон: $phone <br>Дата: $data <br>Сообщение: $text" ;
 require_once($_SERVER['DOCUMENT_ROOT'] . '/phpmailer/PHPMailerAutoload.php'); //подключаем класс
 $mail = new PHPMailer(); //вызываем класс
 $mail->CharSet = 'utf-8';   //Устанавливаем кодировку

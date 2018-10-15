@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import "magnific-popup";
+@import "owl.carousel";
+@import "owl.theme.default";
 @font-face {
     font-family:blisspro; /* Имя шрифта */
     src: url(../fonts/BlissPro-Light.woff); /* Путь к файлу со шрифтом */
@@ -123,6 +126,7 @@ a:hover{
 }
 
 
+
 #header{
 	min-height: 100vh;
 	height: 100%;
@@ -134,6 +138,7 @@ a:hover{
 	display: flex;
 	min-height: 100px;
 	align-items: center;
+	flex-flow: row wrap;
 	justify-content: flex-end;
 
 }
@@ -150,14 +155,22 @@ a:hover{
 	font-weight: 400;
 	margin-right: 5px;
 }
+
+#header .tel_top span a{
+	color: #fff;
+}
  #header .tel_top p{
-	font-size: 12px;
+	font-size: 16px;
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
+	 margin-top: -5px;
+	 display: inline-block;
 	
  }
-
+.block9-item.right .tel span a{
+	color:$green;
+}
 
 #header .tel_top span:before{
 	content: "";
@@ -397,6 +410,7 @@ color: $green;
 		  padding-left: 10px;
 	}
 	.form textarea{
+
 		  border-width: 1px;
 		  border-color: rgb(85, 85, 85);
 		  border-style: solid;
@@ -436,6 +450,7 @@ color: $green;
 		color: $text-color;
 		margin: 20px 0;
 		display: inline-block;
+		font-size: 21px;
 	}
 	.block3 .block3-td.right p{
 		text-align: left;
@@ -475,10 +490,12 @@ color: $green;
 	.block4 .row .block4-item span{
 		color: $green;
 		font-weight: 600;
+		font-family: 'blisspro', sans-serif;
 	}
 	.block4 .row .block4-item p{
 		color: $text-color;
 		text-align: center;
+		font-family: 'blisspro', sans-serif;
 	}
 	.block4 .btn-green{
 		margin: auto;
@@ -520,13 +537,13 @@ color: $green;
 		left: 0;
 		right: 0;
 		top: 100%;
-		bottom: -10%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		z-index: 2;
 		opacity: 1;
 		transition: top .3s ease-in;
+		text-align: center;
 	}
 	.block5 .row .block5-item .block:hover span {
 		opacity: 1;
@@ -617,6 +634,8 @@ color: $green;
 		margin-top: 90px;
 		padding-top: 25px;
 		padding-bottom: 20px;
+		z-index: 10;
+		position: relative;
 	}
 	.block7 h2{
 		
@@ -715,6 +734,8 @@ color: $green;
 
 	.block9 .block9-item.right{
 		position: relative;
+		background: rgba(255, 255, 255, 0.81);
+		box-shadow: 1px -1px 3px rgba(0, 0, 0, 0.09);
 		
 	}
 
@@ -726,36 +747,42 @@ color: $green;
 		margin: auto;
 		margin-top: 150px;
 		width: 93%;
+		padding-left: 84px;
 	}
 	.block9-item.right .block-text span{
 		margin: 18px 0;
 		display: inline-block;
 		color: $text-color;
-		font-size: 22px;
-		font-family: "Robot";
+		font-size: 19px;
+		font-family: 'blisspro', sans-serif;
 		font-weight: bold;
-	} 
+	}
+
+	footer .tel-footer a{
+		color: #fff;
+	}
 	.block9-item.right .block-text p{
 		color: $text-color;
 		font-size: 18px;
-		font-family: "Robot";
+		font-family: 'blisspro', sans-serif;
 		font-weight: bold;
 		margin-bottom: 10px;
 	}
 
 	.block9-item.right .tel{
-		width: 90%;		
+		width: 100%;
+		font-family: 'blisspro', sans-serif;
 	}
 
 	.block9-item.right .tel span{
 		color: $green;
-		font-family: 'Roboto';
 		font-weight: bold;
 		display: inline-block;
 		margin: 5px;
+		font-family: 'blisspro', sans-serif;
 	}
 	.block9-item.right .tel .text{
-		font-size: 15px;
+		font-size: 20px;
 	}
 
 	footer{
@@ -838,6 +865,8 @@ color: $green;
 	}
 
 }
+
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
@@ -954,6 +983,13 @@ color: $green;
 	.block9-item.right .tel .text{
 		display: block;
 	}
+
+	.hide-in-mobe{
+		display: none!important;
+		background: red;
+	}
+
+
 }
 
 /* Small Devices, Tablets */
@@ -982,6 +1018,7 @@ color: $green;
 
 	.block4 .row{
 		flex-flow: column;
+		font-family: 'blisspro', sans-serif;
 	}	
 	.block4 .row .block4-item{
 	margin-bottom: 40px;
@@ -1002,6 +1039,9 @@ color: $green;
 	.block7 .slider2.owl-theme{
 		width: 100%;
 	}
+	.block8{
+		padding: 80px 0;
+	}
 	.block9{
 		flex-flow: column;
 		justify-content: center;
@@ -1012,9 +1052,9 @@ color: $green;
 	}
 	.block9 .block9-item.left iframe{
 		height: 300px;
-		margin-top: 10px;
-		margin-top: 70px;
+		margin-top: 80px;
 	}
+
 	.block9-item.right,.block9-item.left{
 		width: 90%;
 	}
@@ -1027,6 +1067,8 @@ color: $green;
 	.block9-item.right .block-text{
 		text-align: center;
 		margin-top: 0;
+		padding-left: 0;
+		padding: 60px 0;
 	}
 	footer{
 		flex-direction: column;
@@ -1090,6 +1132,9 @@ color: $green;
 		width: 100%;
 		word-break: break-all;
 	}
+	#header .tel_top p{
+		margin-top: 9px;
+	}
 
 }
 
@@ -1124,6 +1169,7 @@ color: $green;
 
 }
 
+
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 
@@ -1136,6 +1182,10 @@ color: $green;
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+	.hide-pc{
+		display: none!important;
+		color: #fff;
+	}
 
 }
 

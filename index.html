@@ -2,13 +2,12 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icon.png">
+    <meta name="viewport"  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Предрейсовые медицинские осмотры в Воронеже и области</title>
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <meta name="keywords" content="Элипс,предрейсовые медицинские осмотры,предрейсовые, медицинские" />
+    <meta name="description" content="Элипс - предрейсовые медицинские осмотры в Воронеже и области, имеющей лицензию на данный вид деятельности" />
     <link rel="stylesheet" href="css/main.css">   
 </head>
 <body>
@@ -17,28 +16,35 @@
             <span>Оставьте заявку пока не поздно</span>
             <p>перезвоним и проконсультриуем в <br>ближайшее время!</p>
             <label for="name">Ваше имя</label>
-            <input type="text" name="name">
+            <input id="name" type="text" name="name">
 
             <label for="tel">Телфон</label>
-            <input type="text" name="tel">
+            <input id="tel" type="text" name="tel">
 
-            <label for="text">Ваше сообщение</label>
-            <textarea name="text" id="" cols="30" rows="10"></textarea> 
+            <label id="text" for="text">Ваше сообщение</label>
+            <textarea name="text"  cols="30" rows="10"></textarea>
 
             <input type="submit" class="btn-green">
 
     </form>
-    </div>
 <header id="header">
     <div class="row">
         <div class="tel_top">
-            <div class="tel">
+            <div class="tel hide-in-mobe">
              <span>тел. 8 (800) 555-23-20</span> <p>(звонок бесплатный)</p>
             </div>
 
-            <div class="tel">
+            <div class="tel hide-in-mobe">
                 <span>тел. +7 (473) 2-911-188</span> <p>(круглосуточно)</p>
             </div>
+
+                <div class="tel hide-pc">
+                    <span><a href="tel:8 (800) 555-23-20">тел. 8 (800) 555-23-20</a></span> <p>(звонок бесплатный)</p>
+                </div>
+
+                <div class="tel hide-pc">
+                    <span><a href="tel:+7 (473) 2-911-188">тел. +7 (473) 2-911-188</a></span> <p>(круглосуточно)</p>
+                </div>
         </div>
         <div class="header_center">
             <img id="logo" src="img/logo.png" alt="Предрейсовые медицинские осмотры в Воронеже и области">
@@ -153,7 +159,8 @@
 </div>
 <div class="block3">
     <div class="row">
-        <div class="block3-td">
+        <div class="block3-td left">
+            <div class="bg-block3-td"></div>
             <div id="form-in">
                 <form action="message.php" method="post" class="form">
                     <span>Оставьте заявку пока не поздно</span>
@@ -165,7 +172,7 @@
                     <input type="text" name="tel">
 
                     <label for="text">Ваше сообщение</label>
-                    <textarea name="text" id="" cols="30" rows="10"></textarea> 
+                    <textarea name="text"  cols="30" rows="10"></textarea>
                     
                     <input type="submit" class="btn-green">
                 </form>
@@ -235,35 +242,42 @@
             <div class="block">
                 <img class="block-bg" src="img/block-1.png"  alt="">
                 <p class="block-eye"></p>
-                <span>Lorem ipsum dolor sit.</span>
+                <span>Лицензированная медицинская организация</span>
             </div>
         </div>
         <div class="block5-item">
                <div class="block">
                   <img class="block-bg" src="img/block-2.png"  alt="">
                   <p class="block-eye"></p>
-                <span>Lorem ipsum dolor sit.</span>
+                <span>Все сотрудники с
+                        действующими
+                        сертификатами.</span>
             </div>
         </div>
         <div class="block5-item">
                <div class="block">
                   <img class="block-bg" src="img/block-3.png"  alt="">
                   <p class="block-eye"></p>
-                <span>Lorem ipsum dolor sit.</span>
+                <span>Качественное
+                    сертифицированное
+                    оборудование</span>
             </div>
         </div>
         <div class="block5-item">
                <div class="block">
                   <img class="block-bg" src="img/block-4.png"  alt="">
                   <p class="block-eye"></p>
-                <span>Lorem ipsum dolor sit.</span>
+                <span>Гарантированное ведение
+                    необходимой
+                    документации</span>
             </div>
         </div>
         <div class="block5-item">
                <div class="block">
                   <img class="block-bg" src="img/block-5.png"  alt="">
                   <p class="block-eye"></p>
-                <span>Lorem ipsum dolor sit.</span>
+                <span>Гибкость и лояльность к
+                    клиентам</span>
             </div>
         </div>
          <div class="block5-item">
@@ -329,7 +343,7 @@
                             <input type="text" name="tel">
 
                             <label for="text">Ваше сообщение</label>
-                            <textarea name="text" id="" cols="30" rows="10"></textarea> 
+                            <textarea name="text" cols="30" rows="10"></textarea>
                             
                             <input type="submit" class="btn-green">
                         </form>
@@ -340,7 +354,7 @@
         <!-- block-8 -->
         <div class="block9">       
                 <div class="block9-item left">
-                        <iframe src="https://yandex.ua/map-widget/v1/-/CBBOZJVkoD" frameborder="1" allowfullscreen="true"></iframe>
+                    <iframe src="https://yandex.ru/map-widget/v1/-/CBBOZJVkoD"  frameborder="1" allowfullscreen="true"></iframe>
                  </div>
 
                 <div class="block9-item right">
@@ -351,8 +365,12 @@
                         <p>ул. Ипподромная 2В,</p>
                         <p>ул. Жемчужная, 11</p>
                         <div class="tel">
-                            <span>8 (800) 555-23-20</span> <span class="text">(звонок бесплатный)</span> <br>
-                            <span>+7 (473) 2-911-188</span> <span class="text">(круглосуточно)</span>
+                            <span class="hide-in-mobe">8 (800) 555-23-20</span> <span class="text hide-in-mobe">(звонок бесплатный)</span> <br>
+                            <span class="hide-in-mobe">+7 (473) 2-911-188</span> <span class="text hide-in-mobe">(круглосуточно)</span>
+
+                            <span class="hide-pc"><a href="tel:8 (800) 555-23-20">8 (800) 555-23-20</a></span> <span class="text hide-pc">(звонок бесплатный)</span> <br>
+                            <span class="hide-pc"><a href="tel:+7 (473) 2-911-188">+7 (473) 2-911-188</a></span> <span class="text hide-pc">(круглосуточно)</span>
+
                         </div>
                     </div>
                 </div>
@@ -363,8 +381,11 @@
         <img class="logo-footer" src="img/logo.png" alt="элпис">
         <a class="btn-green popup-with-form"  data-effect="mfp-zoom-in" href="#form">Обратный звонок</a>
         <div class="tel-footer">
-            <span>8 (800) 555-23-20</span> <br>
-            <span>+7 (473) 2-911-188 </span>
+            <span class="hide-in-mobe">8 (800) 555-23-20</span> <br>
+            <span class="hide-in-mobe">+7 (473) 2-911-188 </span>
+
+            <span class="hide-pc"><a href="tel:8 (800) 555-23-20">8 (800) 555-23-20</a></span> <br>
+            <span class="hide-pc"><a href="tel:+7 (473) 2-911-188 ">+7 (473) 2-911-188</a></span>
         </div>
     </footer>
 <!-- script  -->
