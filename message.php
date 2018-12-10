@@ -49,10 +49,15 @@ if($_POST['text']){
 
 $body = "Имя: $name <br> Телефон: $phone <br>Дата: $data <br>Сообщение: $text" ;
 require_once($_SERVER['DOCUMENT_ROOT'] . '/phpmailer/PHPMailerAutoload.php'); //подключаем класс
-$mail = new PHPMailer(); //вызываем класс
+
+$mail = new PHPMailer(true); //вызываем класс
+$mail->IsSMTP();
+$mail->Host  = 'smtp.gmail.com';
 $mail->CharSet = 'utf-8';   //Устанавливаем кодировку
 $mail->SetLanguage('ru');   //для ошибок итд.
-$mail->addAddress("phpner@gmail.com"); //куда отправлять список через ","
+/*$mail->addAddress("info@elpismed.ru","imarkventus@mail.ru"); //куда отправлять список через ","
+$mail->addAddress("imarkventus@mail.ru","imarkventus@mail.ru"); //куда отправлять список через ","*/
+$mail->addAddress("phpner@gmail.com","imarkventus@mail.ru"); 
 $mail->From = '***';
 $mail->FromName = 'Элпис';
 $mail->Subject = "ПРЕДРЕЙСОВЫЕ МЕДИЦИНСКИЕ ОСМОТРЫ В ВОРОНЕЖЕ И ОБЛАСТИ";
